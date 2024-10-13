@@ -11,6 +11,16 @@ author_profile: true
 
 {% include base_path %}
 
+<h2>Conference Publications</h2>
+<ul>
+  <li><a href="/papers/halo_paper">Hazard-Aware Landing Optimization for Autonomous Systems</a></li>
+</ul>
+
+<h2>Journal Publications</h2>
+<ul>
+  <li><a href="/papers/ral_2024/">Continuous Time Linf-of-Sight Guidance for Six Degree of Freedom Systems</a></li>
+</ul>
+
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
   {% for category in site.publication_category  %}
@@ -23,14 +33,17 @@ author_profile: true
         <h2>{{ category[1].title }}</h2><hr />
         {% assign title_shown = true %}
       {% endunless %}
+      {% if post.image %}
+        <img src="{{ site.baseurl }}{{ post.image }}" alt="Publication image" width="300">
+      {% endif %}
       {% include archive-single.html %}
     {% endfor %}
   {% endfor %}
 {% else %}
   {% for post in site.publications reversed %}
+    {% if post.image %}
+      <img src="{{ site.baseurl }}{{ post.image }}" alt="Publication image" width="300">
+    {% endif %}
     {% include archive-single.html %}
   {% endfor %}
 {% endif %}
-
-
-
