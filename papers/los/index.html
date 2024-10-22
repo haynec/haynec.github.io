@@ -39,12 +39,12 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/fontawesome.all.min.js"></script>
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
   <!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> -->
-  <script type="text/javascript" defer src="https://cdn.plot.ly/plotly-2.34.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.plot.ly/plotly-2.34.0.min.js"></script>
   <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </head>
@@ -185,7 +185,7 @@
       <div class="plotly_container" style="width: 48%; margin: 10px 0;">                        
         <h2 class ="title" style="color: #999999; text-align: center;">Proposed CT-LoS</h2>
         <div id="7e3da8f2-1d85-4c3f-89ba-8c9df3c5775e" class="plotly-graph-div" style="height:10%; width:100%;"></div>            
-        <script defer src="static/dr_animation.js" async></script>
+        <script src="static/dr_animation.js" async></script>
         <p> 
           Throughout this trajectroy the quadrotor maintains LoS on the keypoints while navigating through the gates, even performaning a flip manuever around frame 485 to do so.
         </p>
@@ -194,7 +194,7 @@
       <div class="plotly_container" style="width: 48%; margin: 10px 0;">        
         <h2 class ="title" style="color: #999999; text-align: center;">Baseline DT-LoS</h2>                                               
         <div id="622cd6b4-6b78-491a-abd8-e78ff26abf2c" class="plotly-graph-div" style="height:10%; width:100%;"></div>            
-        <script defer src="static/dr_dt_animation.js" async></script>
+        <script src="static/dr_dt_animation.js" async></script>
         <p> 
           Right at the beginning of the trajectory, the quadrotor imnmeditley pitches down in order to rapidly accelerate while sacrificing 
           visibility on the keypoints in between discretization nodes. This is expected as this is a minimal time scenario and LoS is only enforced at nodes.
@@ -210,7 +210,7 @@
 
       <div class="plotly_container" style="width: 48%; margin: 10px 0;">                                        
         <div id="a7a70b6c-5bd6-4f34-b03b-bb99b530f54d" class="plotly-graph-div" style="height:40%; width:100%;"></div>            
-        <script defer src="static/dr_animation_camera.js"> async </script>
+        <script src="static/dr_animation_camera.js"> async </script>
         <p>
           Note that the full keypoint trajectories are kept within the LoS.
         </p>
@@ -218,7 +218,7 @@
       
       <div class="plotly_container" style="width: 48%; margin: 10px 0;">                                        
         <div id="8abf01bd-c945-4ea5-ab26-dd99433156e1" class="plotly-graph-div" style="height:40%; width:100%;"></div>            
-        <script defer src="static/dr_dt_animation_camera.js" async></script>
+        <script src="static/dr_dt_animation_camera.js" async></script>
         <p>
           As only at the nodes is the LoS enforced on keypoints, 
           the quadrotor is able to move more agressively without regard for LoS violation. 
@@ -235,12 +235,12 @@
 
       <div class="plotly_container" style="width: 48%; margin: 10px 0;">                                        
         <div id="30a19a64-73a4-4bc6-8601-63a06a628a9d" class="plotly-graph-div" style="height:45%; width:100%;"></div>            
-        <script defer src="static/dr_conic_animation.js" async></script>
+        <script src="static/dr_conic_animation.js" async></script>
       </div> 
       
       <div class="plotly_container" style="width: 48%; margin: 10px 0;">                                        
         <div id="db4048e6-7c8b-41bb-8816-94faba8fc4ad" class="plotly-graph-div" style="height:45%; width:100%;"></div>            
-        <script defer src="static/dr_dt_conic_animation.js" async></script>  
+        <script src="static/dr_dt_conic_animation.js" async></script>  
       </div>
 
       <div style="max-width: 95%; margin: 0 auto;">
@@ -252,12 +252,12 @@
       
       <div class="plotly_container" style="width: 48%; margin: 10px 0;">                                        
         <div id="7df677b9-1866-4d21-a489-7639447b113a" class="plotly-graph-div" style="height:10%; width:100%;"></div>            
-        <script defer src="static/dr_scp_animation.js" async></script>
+        <script src="static/dr_scp_animation.js" async></script>
       </div>
       
       <div class="plotly_container" style="width: 48%; margin: 10px 0;">                                        
         <div id="cd13956f-73e5-4a5d-af92-5a6290652b99" class="plotly-graph-div" style="height:100%; width:100%;"></div>            
-        <script defer src="static/dr_dt_scp_animation.js" async></script>
+        <script src="static/dr_dt_scp_animation.js" async></script>
       </div>    
       
       <div style="max-width: 95%; margin: 0 auto;">
@@ -290,7 +290,7 @@
     <div class="plotly-figs" style="display: flex; justify-content: space-around; flex-wrap: wrap; align-items: flex-start;">
       <div class="plotly_container" style="width: 48%; margin: 10px 0;">                                        
         <div id="aa27403c-b57e-4d69-9b37-83e8f894711f" class="plotly-graph-div" style="height:100%; width:100%;"></div>            
-        <script defer src="static/cine_animation.js" async></script>
+        <script src="static/cine_animation.js" async></script>
         <p style="color: white;">
           The trajectory continuously maintains LoS on the dynamics keypoint while reamining within the minimum and maximum ranges.
         </p>
@@ -298,7 +298,7 @@
 
       <div class="plotly_container" style="width: 48%; margin: 10px 0;">                                        
         <div id="cab1c874-924e-4134-976f-5fbf69fa4e98" class="plotly-graph-div" style="height:100%; width:100%;"></div>            
-        <script defer src="static/cine_dt_animation.js" async></script>
+        <script src="static/cine_dt_animation.js" async></script>
         <p style="color: white;">
           This trajectory is similar to the CT-LoS towards the beginning but around frame 370, the drone flys vertically upwards, 
           incurring large internodal LoS constraint violation, after penultimate nodes 
@@ -315,12 +315,12 @@
 
       <div class="plotly_container" style="width: 48%; margin: 10px 0;">                                        
         <div id="78c9b8d6-82e1-4321-815a-082cff9eef9e" class="plotly-graph-div" style="height:100%; width:100%;"></div>            
-        <script defer src="static/cine_animation_camera.js" async></script>
+        <script src="static/cine_animation_camera.js" async></script>
       </div>
 
       <div class="plotly_container" style="width: 48%; margin: 10px 0;">
         <div id="1fbc389a-e70b-4785-8d82-7f5dea0738ae" class="plotly-graph-div" style="height:100%; width:100%;"></div>
-        <script defer src="static/cine_dt_animation_camera.js" async></script>
+        <script src="static/cine_dt_animation_camera.js" async></script>
         <p style="color: white;">
           At around frame 360, the keypoint trajectory is no longer visible in the camera view corresponding to when the drone is effectively free-falling towards the last node.
         </p>
@@ -335,12 +335,12 @@
 
       <div class="plotly_container" style="width: 48%; margin: 10px 0;">                                        
         <div id="f1683f48-838d-4ea0-94b5-a94173ee67d2" class="plotly-graph-div" style="height:100%; width:100%;"></div>            
-        <script defer src="static/cine_conic_animation.js" async></script>
+        <script src="static/cine_conic_animation.js" async></script>
       </div>     
       
       <div class="plotly_container" style="width: 48%; margin: 10px 0;">                                        
         <div id="5ed60473-afcb-4bde-9c97-d5270471a48f" class="plotly-graph-div" style="height:100%; width:100%;"></div>            
-        <script defer src="static/cine_dt_conic_animation.js" async></script>
+        <script src="static/cine_dt_conic_animation.js" async></script>
         <p style="color: white;">
           At around frame 360, the keypoint trajectory is no longer within the viewcone, corresponding to when the drone is effectively free-falling towards the last node.
         </p>
@@ -355,12 +355,12 @@
       
       <div class="plotly_container" style="width: 48%; margin: 10px 0;">                                        
         <div id="f6d10446-24f5-47d1-9a4c-55e8d4c12e28" class="plotly-graph-div" style="height:100%; width:100%;"></div>            
-        <script defer src="static/cine_scp_animation.js" async></script>
+        <script src="static/cine_scp_animation.js" async></script>
       </div>                       
 
       <div class="plotly_container" style="width: 48%; margin: 10px 0;">                                        
         <div id="b5149b27-95de-4066-900f-88ebb60675fc" class="plotly-graph-div" style="height:100%; width:100%;"></div>            
-        <script defer src="static/cine_dt_scp_animation.js" async></script>
+        <script src="static/cine_dt_scp_animation.js" async></script>
       </div>
       <div style="max-width: 95%; margin: 0 auto;">
         <p style="font-size: 20px;">
@@ -424,7 +424,7 @@
     <div class="plotly-figs" style="display: flex; justify-content: space-around; flex-wrap: wrap; align-items: flex-start;">
       <div class="plotly_container" style="width: 48%; margin: 10px 0;">                                        
         <div id="560e7ae9-6c13-4202-935a-6afc33c6ad52" class="plotly-graph-div" style="height:100%; width:100%;"></div>            
-        <script defer src="static/dr_results.js" async></script>
+        <script src="static/dr_results.js" async></script>
         <p style="color: white; text-align: center;">
           Relative Navigation The CT-LoS method has significantly reduced LoS violation compared to the baseline method.
         </p>
@@ -433,17 +433,17 @@
       
       <div class="plotly_container" style="width: 48%; margin: 10px 0;">                                        
         <div id="b40821f2-56c2-476e-ad06-deb5e9910396" class="plotly-graph-div" style="height:100%; width:100%;"></div>            
-        <script defer src="static/dr_timing_results.js" async></script>
+        <script src="static/dr_timing_results.js" async></script>
       </div>
       
       <div class="plotly_container" style="width: 48%; margin: 10px 0;">
         <div id="b8daa2af-6a8f-458c-a4e1-eecb9a160a56" class="plotly-graph-div" style="height:100%; width:100%;"></div>
-        <script defer src="static/cine_results.js" async></script>
+        <script src="static/cine_results.js" async></script>
       </div>
 
       <div class="plotly_container" style="width: 48%; margin: 10px 0;">                                        
         <div id="52e15b1b-159f-4bce-952c-517e4e35f289" class="plotly-graph-div" style="height:100%; width:100%;"></div>            
-        <script defer src="static/cine_timing_results.js" async></script>
+        <script src="static/cine_timing_results.js" async></script>
       </div>                                    
     </div>                                 
 
