@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Continuous-Time Line-of-Sight Constrained Trajectory Planning</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Continuous-Time Line-of-Sight Constrained Trajectory Planning</h1>
+            <h2 class="subtitle is-2 publication-subtitle">for 6-Degree of Freedom Systems</h2>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Christopher R. Hayner</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">John M. Carson III</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Beh&#231;et
+                  A&#231;&#305;kme&#351;e</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="FITH AUTHOR PERSONAL LINK" target="_blank">Karen Leung</a><sup>1</sup></span>
+              </span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup> University of Washington, <sup>2</sup> Johnson Space Center
+                <br>IEEE Robotics and Automation Letters (RA-L), 2024 (In Review)</span>
+            </div>
+
+            <!-- Add horizontgal line -->
+            <hr style="border-top: 1px solid #ffffff; margin-top: 1rem; margin-bottom: 1rem;">
+
+            <div class="publication-links"
+              style="display: flex; justify-content: center; margin-top: 3rem; margin-left: 25px">
+              <!-- Arxiv PDF link -->
+              <!-- <a href="https://arxiv.org/pdf/2304.01583" target="_blank" class="external-link">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                  <img src="static/images/paper.png" alt="Image description" style="height: 100px;">
+                  <span>Paper</span>
+                </div>
+              </a> -->
+
+              <!-- Slides link -->
+              <!-- <a href="static/pdfs/HALO_Presentation_ICRA.pdf" target="_blank" class="external-link">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                  <img src="static/images/slides.png" alt="Image description" style="height: 100px;">
+                  <span>Slides</span>
+                </div>
+              </a> -->
+
+              <!-- Poster link -->
+              <!-- <a href="static/pdfs/ICRA2023HALO_A4.pdf" target="_blank" class="external-link">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                  <img src="static/images/poster.png" alt="Image description" style="height: 100px;">
+                  <span>Poster</span>
+                </div>
+              </a> -->
+
+              <!-- GitHub link -->
+              <!-- <a href="https://github.com/UW-ACL/HALO" target="_blank" class="external-link">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                  <i class="fab fa-github" style="font-size: 100px; color: #ffffff;"></i>
+                  <span>GitHub</span>
+                </div>
+              </a> -->
+
+              <!-- Video Presentation link -->
+              <!-- <a href="https://www.youtube.com/watch?v=tV0laX3ZvaY" target="_blank" class="external-link">
+                <div style="position: relative; display: flex; flex-direction: column; align-items: center;">
+                  <img src="static/images/slides.png" alt="Image description" style="height: 100px;">
+                  <!-- Overlay the YouTube icon on top of the image -->
+                  <!-- <span class="icon"
+                    style="position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); height: 30px;">
+                    <i class="fab fa-youtube" style="font-size: 2em; color: #2b2b2b;"></i>
+                  </span>
+                  <span>Video</span>
+                </div>
+              </a> -->
+            </div>
+            </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- Teaser video-->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div style="display: flex; justify-content: center;">
+          <iframe width="800" height="450" src="https://www.youtube.com/embed/miYeYnfvZYs?si=p2BB7x7-vi-f1W-K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End teaser video -->
+
+  <!-- Abstract -->
+  <section class="section" id="abstract">
+    <div class="container is-max-desktop content">
+      <div style="text-align: center;">
+        <h2 class="title is-3" style="color: white;">Abstract</h2>
+      </div>
+      <p>
+        Perception algorithms are ubiquitous in modern autonomy stacks, providing necessary environmental information to operate in the real world. 
+        Many of these algorithms depend on the visibility of keypoints, which must remain within the robot’s line-of-sight (LoS), for reliable operation. 
+        This paper tackles the challenge of maintaining LoS on such keypoints during robot movement. 
+        We propose a novel method that addresses these issues by ensuring applicability to various sensor footprints, adaptability to arbitrary nonlinear dynamics and constantly enforces LoS throughout the robot’s path. 
+        We show through our experiments that the proposed approach achieves significantly reduced LoS violation and runtime when compared to existing state-of-the-art methods in several representative and challenging scenarios.
+      </p>
+    </div>                         
+  </section>
+  <!-- End Abstract -->
+
+  <!-- Rel Nav Sim -->
+  <section class="section hero is-dark">
+    <div style="text-align: center;">
+      <h2 class="title is-3">Relative Navigation</h2>
+    </div>
+    <div style="max-width: 85%; margin: 0 auto;">
+      <p style="text-indent: 40px; font-size: 20px;">
+        The relative navigation scenario is inspired by the relative navigation challenges encountered in drone racing.
+        In this scenario, the quadrotor must navigate through a predefined sequence of 10 gates while maintaining line-of-sight on 10 static targets in minimal time.
+        The viewcone modeled as a symmetric 2-Norm cone.
+        All of these plots are interactive so you can press play to view the animation, zoom in and out, pan, and rotate the view. Additionally to turn off a trace simply 
+        click on the trace in the legend.
+      </p>
+    </div>
+    <div class="plotly-figs" style="display: flex; justify-content: space-around; flex-wrap: wrap; align-items: flex-start;">
+      <div class="plotly_container" style="width: 48%; margin: 10px 0;">                        
+        <h2 class ="title" style="color: #999999; text-align: center;">Proposed CT-LoS</h2>
+        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.34.0.min.js"></script>                
+        <div id="fef37800-5b32-4099-961c-64f06d1640cd" class="plotly-graph-div" style="height:10%; width:100%;"></div>            
+        <script src="https://haynec.pnwsoft.com/dr_animation.js"></script>
+        <p> 
+          Throughout this trajectroy the quadrotor maintains LoS on the keypoints while navigating through the gates, even performaning a flip manuever around frame 485 to do so.
+        </p>
+      </div>
+
+      <div class="plotly_container" style="width: 48%; margin: 10px 0;">        
+        <h2 class ="title" style="color: #999999; text-align: center;">Baseline DT-LoS</h2>                               
+        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.34.0.min.js"></script>                
+        <div id="d50d41d0-b22e-40a6-bd0d-76b32ce32c98" class="plotly-graph-div" style="height:10%; width:100%;"></div>            
+        <script src="https://haynec.pnwsoft.com/dr_dt_animation.js"></script>
+        <p> 
+          Right at the beginning of the trajectory, the quadrotor imnmeditley pitches down in order to rapidly accelerate while sacrificing 
+          visibility on the keypoints in between discretization nodes. This is expected as this is a minimal time scenario and LoS is only enforced at nodes.
+        </p>
+      </div>
+      
+      <div style="max-width: 95%; margin: 0 auto;">
+        <p style="font-size: 20px;">
+          These plots animate the positional trajectory of the drone.
+          To make the animation run faster, click the viewcone label in the legend (which will only show up once the animation is playing) to turn off that trace.
+        </p>
+      </div>
+
+      <div class="plotly_container" style="width: 48%; margin: 10px 0;">                        
+        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.34.0.min.js"></script>                
+        <div id="a835c9bf-d15b-46b3-bfde-b1594834fe53" class="plotly-graph-div" style="height:40%; width:100%;"></div>            
+        <script src="https://haynec.pnwsoft.com/dr_animation_camera.js"> </script>
+        <p>
+          Note that the full keypoint trajectories are kept within the LoS.
+        </p>
+      </div>
+      
+      <div class="plotly_container" style="width: 48%; margin: 10px 0;">                        
+        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.34.0.min.js"></script>                
+        <div id="bc0be5a9-323f-4638-a059-151cdca6336e" class="plotly-graph-div" style="height:40%; width:100%;"></div>            
+        <script src="https://haynec.pnwsoft.com/dr_dt_animation_camera.js"></script>
+        <p>
+          As only at the nodes is the LoS enforced on keypoints, 
+          the quadrotor is able to move more agressively without regard for LoS violation. 
+          For example the agressive pitch down maneuver at the beginning of the trajectory.
+        </p>
+      </div>
+
+      <div style="max-width: 95%; margin: 0 auto;">
+        <p style="font-size: 20px;">
+          These plots show the egocentric or camera view. The keypoint trajectories, resolved in the sensor frame, are shown in different colors.
+          The points correspond to discrete nodes and the lines are the nonlinear propagation of the dynamics.
+        </p>
+      </div>
+
+      <div class="plotly_container" style="width: 48%; margin: 10px 0;">                        
+        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.34.0.min.js"></script>                
+        <div id="a11b025f-6651-427b-9f86-4a9fb4e73294" class="plotly-graph-div" style="height:45%; width:100%;"></div>            
+        <script src="https://haynec.pnwsoft.com/dr_conic_animation.js"></script>
+      </div> 
+      
+      <div class="plotly_container" style="width: 48%; margin: 10px 0;">                        
+        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.34.0.min.js"></script>                
+        <div id="9b5684e0-bfea-493a-8266-42f78bef90bd" class="plotly-graph-div" style="height:45%; width:100%;"></div>            
+        <script src="https://haynec.pnwsoft.com/dr_dt_conic_animation.js"></script>  
+      </div>
+
+      <div style="max-width: 95%; margin: 0 auto;">
+        <p style="font-size: 20px;">
+          These plots visualize the LoS constraint and show the keypoint trajectories resolved in the sensor frame as well as there projections onto the XZ and YZ planes, 
+          with dots corresponding to nodes and lines to nonlinear propagation of dynamics.
+        </p>
+      </div>
+      
+      <div class="plotly_container" style="width: 48%; margin: 10px 0;">                        
+        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.34.0.min.js"></script>                
+        <div id="1dc86ab2-a636-4c47-94a8-168667f2ce3f" class="plotly-graph-div" style="height:10%; width:100%;"></div>            
+        <script src="https://haynec.pnwsoft.com/dr_scp_animation.js"></script>
+      </div>
+      
+      <div class="plotly_container" style="width: 48%; margin: 10px 0;">                        
+        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.34.0.min.js"></script>                
+        <div id="5846179f-1c43-45fd-a728-ac843d9a4ba7" class="plotly-graph-div" style="height:100%; width:100%;"></div>            
+        <script src="https://haynec.pnwsoft.com/dr_dt_scp_animation.js"></script>
+      </div>    
+      
+      <div style="max-width: 95%; margin: 0 auto;">
+        <p style="font-size: 20px;">
+          These plots show the interations of Alg. 1 until convergence. The initial guess for position and velocity 
+          is created by taking a straight-line innterpolation between each gate and boundary condition. The initial 
+          guess for attitude is found by pointing the sensor towards the mean location of the keypoints.
+          Note that both methods recieve the same initial guess.
+        </p>
+      </div>
+                             
+    </div> 
+  </section>
+  <!-- End Rel Nav Sim -->
+
+  <!-- Cine Sim -->
+  <section class="section hero">
+    <div style="text-align: center;">
+      <h2 class="title is-3" style="color: white;">Cinematography</h2>
+    </div>
+    <div style="max-width: 85%; margin: 0 auto;">
+      <p style="text-indent: 40px; font-size: 20px; color: white;">
+        The cinematography scenario is inspired by the applications in which a subject needs to be tracked and filmed.
+        In this scenario, the quadrotor must remain within a minimum and maximum range from a single dynamics keypoint while keeping it within LoS.
+        We assume the trajectory of the keypoint is known.
+        The viewcone modeled as a non-symmetric Infinity-Norm cone.
+      </p>
+    </div>
+
+    <div class="plotly-figs" style="display: flex; justify-content: space-around; flex-wrap: wrap; align-items: flex-start;">
+      <div class="plotly_container" style="width: 48%; margin: 10px 0;">                        
+        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.34.0.min.js"></script>                
+        <div id="bf5a62a4-21c1-4949-a2b5-a153354a6faf" class="plotly-graph-div" style="height:100%; width:100%;"></div>            
+        <script src="https://haynec.pnwsoft.com/cine_animation.js"></script>
+        <p style="color: white;">
+          The trajectory continuously maintains LoS on the dynamics keypoint while reamining within the minimum and maximum ranges.
+        </p>
+      </div>
+
+      <div class="plotly_container" style="width: 48%; margin: 10px 0;">                        
+        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.34.0.min.js"></script>                
+        <div id="f9a45d9b-b827-480a-9b17-1a12fb097f4d" class="plotly-graph-div" style="height:100%; width:100%;"></div>            
+        <script src="https://haynec.pnwsoft.com/cine_dt_animation.js"></script>
+        <p style="color: white;">
+          This trajectory is similar to the CT-LoS towards the beginning but around frame 370, the drone flys vertically upwards, 
+          incurring large internodal LoS constraint violation, after penultimate nodes 
+          and effectively free-falls into the last node as this is a minimal fuel problem.
+        </p>
+      </div>
+
+      <div style="max-width: 95%; margin: 0 auto;">
+        <p style="font-size: 20px; color: white;">
+          These plots animate the positional trajectory of the drone.
+          To make the animation run faster, click the viewcone, minimum range, and maximum range labels in the legend (which will only show up once the animation is playing) to turn off that trace.
+        </p>
+      </div>
+
+      <div class="plotly_container" style="width: 48%; margin: 10px 0;">                        
+        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.34.0.min.js"></script>                
+        <div id="47ca6201-5422-4442-a049-6f0c43d529da" class="plotly-graph-div" style="height:100%; width:100%;"></div>            
+        <script src="https://haynec.pnwsoft.com/cine_animation_camera.js"></script>
+      </div>
+
+      <div class="plotly_container" style="width: 48%; margin: 10px 0;">
+        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.34.0.min.js"></script>
+        <div id="346591fe-c801-4069-8ca9-05a0f7e94e5e" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <script src="https://haynec.pnwsoft.com/cine_dt_animation_camera.js"></script>
+        <p style="color: white;">
+          At around frame 360, the keypoint trajectory is no longer visible in the camera view corresponding to when the drone is effectively free-falling towards the last node.
+        </p>
+      </div>
+
+      <div style="max-width: 95%; margin: 0 auto;">
+        <p style="font-size: 20px;">
+          These plots show the egocentric or camera view. The keypoint trajectories, resolved in the sensor frame, are shown in different colors.
+          The points correspond to discrete nodes and the lines are the nonlinear propagation of the dynamics.
+        </p>
+      </div>
+
+      <div class="plotly_container" style="width: 48%; margin: 10px 0;">                        
+        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.34.0.min.js"></script>                
+        <div id="ecb7320a-7d49-42c6-ae94-c0063b796a27" class="plotly-graph-div" style="height:100%; width:100%;"></div>            
+        <script src="https://haynec.pnwsoft.com/cine_conic_animation.js"></script>
+      </div>     
+      
+      <div class="plotly_container" style="width: 48%; margin: 10px 0;">                        
+        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.34.0.min.js"></script>                
+        <div id="1aa14183-d377-4503-b222-8b439242c00d" class="plotly-graph-div" style="height:100%; width:100%;"></div>            
+        <script src="https://haynec.pnwsoft.com/cine_dt_conic_animation.js"></script>
+        <p style="color: white;">
+          At around frame 360, the keypoint trajectory is no longer within the viewcone, corresponding to when the drone is effectively free-falling towards the last node.
+        </p>
+      </div>   
+
+      <div style="max-width: 95%; margin: 0 auto;">
+        <p style="font-size: 20px;">
+          These plots show the egocentric or camera view. The keypoint trajectories, resolved in the sensor frame, are shown in different colors.
+          The points correspond to discrete nodes and the lines are the nonlinear propagation of the dynamics.
+        </p>
+      </div>
+      
+      <div class="plotly_container" style="width: 48%; margin: 10px 0;">                        
+        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.34.0.min.js"></script>                
+        <div id="21f009d5-ae44-41f6-b79b-a813a1bc8bc4" class="plotly-graph-div" style="height:100%; width:100%;"></div>            
+        <script src="https://haynec.pnwsoft.com/cine_scp_animation.js"></script>
+      </div>                       
+
+      <div class="plotly_container" style="width: 48%; margin: 10px 0;">                        
+        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.34.0.min.js"></script>                
+        <div id="f90fb53e-0368-44ea-9b16-f69bf0f569fe" class="plotly-graph-div" style="height:100%; width:100%;"></div>            
+        <script src="https://haynec.pnwsoft.com/cine_dt_scp_animation.js"></script>
+      </div>
+      <div style="max-width: 95%; margin: 0 auto;">
+        <p style="font-size: 20px;">
+          These plots show the interations of Alg. 1 until convergence. The initial guess is created by taking 
+          the keypoint positional trajectory and shifting towards the -x direction by a constant amount and then fixing the attitude 
+          at each discretization node to point the sensor towards the keypoint. Note that both methods recieve the same initial guess.
+        </p>
+      </div>         
+    </div>
+  </section>
+  <!-- End Cine Sim -->
+
+
+  <section class="section hero is-dark">
+    <div style="text-align: center;">
+      <h2 class="title is-3">Results</h2>
+    </div>
+
+    <div style="max-width: 95%; margin: 0 auto;">
+      <p style="font-size: 20px;">
+        In our experiments we seek to answer the following questions:
+        <ol>
+          <li style="margin-left: 10%;"> 
+            How well does CT-LoS satisfy the LoS constraint
+            throughout the entire trajectory compared to the
+            baseline?
+          </li>
+    
+          <li style="margin-left: 10%;">
+            What tradeoffs are made to achieve better LoS
+            violation performance?
+          </li>
+    
+          <li style="margin-left: 10%;">
+            How does CT-LoS scale as the problem size increase?
+          </li>
+        </ol>
+      </p>
+      <p style="font-size: 20px;">
+        We use the following metrics to analyze and address the above questions:
+        <ol>
+          <li style="margin-left: 10%;">
+            LoS Violation: The LoS constraint violation over the full trajectory.
+          </li>
+    
+          <li style="margin-left: 10%;">
+            Runtime: The full runtime of Alg. 1.
+          </li>
+    
+          <li style="margin-left: 10%;">
+            Iterations: The number of iterations Alg. 1 takes to converge.
+          </li>
+    
+          <li style="margin-left: 10%;">
+            Optimality: How optimal with respect to the original objective (either minimal time or minimal fuel) the solution is.
+          </li>
+        </ol>
+      </p>
+    </div>
+
+    <div class="plotly-figs" style="display: flex; justify-content: space-around; flex-wrap: wrap; align-items: flex-start;">
+      <div class="plotly_container" style="width: 48%; margin: 10px 0;">                        
+        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.34.0.min.js"></script>                
+        <div id="d758a4a1-4896-4379-af1f-22fb247807ec" class="plotly-graph-div" style="height:100%; width:100%;"></div>            
+        <script src="https://haynec.pnwsoft.com/dr_results.js"></script>
+        <p style="color: white; text-align: center;">
+          Relative Navigation The CT-LoS method has significantly reduced LoS violation compared to the baseline method.
+        </p>
+      </div>                                   
+      
+      
+      <div class="plotly_container" style="width: 48%; margin: 10px 0;">                        
+        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.34.0.min.js"></script>                
+        <div id="5880e1e7-2d4f-458e-8e1f-57fb862c46b9" class="plotly-graph-div" style="height:100%; width:100%;"></div>            
+        <script src="https://haynec.pnwsoft.com/dr_timing_results.js"></script>
+      </div>
+      
+      <div class="plotly_container" style="width: 48%; margin: 10px 0;">
+        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.34.0.min.js"></script>
+        <div id="25d1631c-bcf4-485b-be8b-566eecb3f40f" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <script src="https://haynec.pnwsoft.com/cine_results.js"></script>
+      </div>
+
+      <div class="plotly_container" style="width: 48%; margin: 10px 0;">                        
+        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.34.0.min.js"></script>                
+        <div id="e1220969-f109-4827-88d5-bd0d10b7c1a2" class="plotly-graph-div" style="height:100%; width:100%;"></div>            
+        <script src="https://haynec.pnwsoft.com/cine_timing_results.js"></script>
+      </div>                                    
+    </div>                                 
+
+
+
+  </section>
+
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>Citation Incoming!!!
+    </code></pre>
+    </div>
+  </section>
+  <!--End BibTex citation -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              <!-- Add a copyright by adding your name -->
+              &copy; 2024 Christopher R. Hayner
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
