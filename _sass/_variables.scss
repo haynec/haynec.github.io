@@ -13,13 +13,13 @@ $paragraph-indent           : false; // true, false (default)
 $indent-var                 : 1.3em;
 
 /* system typefaces */
-$serif                      : Georgia, Times, serif;
-$sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-$monospace                  : Monaco, Consolas, "Lucida Console", monospace;
+$serif                      : "Computer Modern";
+$sans-serif                 : "CMU Sans Serif";
+$monospace                  : "Computer Modern", Monaco, Consolas, "Lucida Console", monospace;
 
 /* sans serif typefaces */
 $sans-serif-narrow          : $sans-serif;
-$helvetica                  : Helvetica, "Helvetica Neue", Arial, sans-serif;
+$helvetica                  : "Computer Modern", Helvetica, "Helvetica Neue", Arial, sans-serif;
 
 /* serif typefaces */
 $georgia                    : Georgia, serif;
@@ -27,6 +27,7 @@ $times                      : Times, serif;
 $bodoni                     : "Bodoni MT", serif;
 $calisto                    : "Calisto MT", serif;
 $garamond                   : Garamond, serif;
+$cmu                        : "Computer Modern", serif;
 
 $global-font-family         : $sans-serif;
 $header-font-family         : $sans-serif;
@@ -61,7 +62,7 @@ $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
 $lighter-gray               : mix(#fff, $gray, 90%);
 
-$body-color                 : #ffffff;
+$body-color                 : #fff;
 $background-color           : #414141;
 $code-background-color      : #fafafa;
 $code-background-color-dark : $light-gray;
@@ -88,7 +89,7 @@ $kaggle-color               : #20c0ff;
 $lastfm-color               : #d51007;
 $linkedin-color             : #007bb6;
 $mastodon-color             : #6364ff;
-$orcid-color                : #a6ce39;
+$orcid-color                : #ffffff;
 $pinterest-color            : #cb2027;
 $rss-color                  : #fa9b39;
 $soundcloud-color           : #ff3300;
