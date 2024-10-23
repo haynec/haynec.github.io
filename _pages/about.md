@@ -7,9 +7,11 @@ redirect_from:
   - /about.html
 ---
 
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 <div class="plotly_container" style="width: 100%; margin: 1px 0;">
-  <div id="main_fig" class="plotly-graph-div" style="height:10%; width:100%;"></div>            
+  <div id="demo_fig" class="plotly-graph-div" style="height:400px; width:100%;"></div>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
   <script src="/papers/los/static/dr_animation_main.js" async></script>
   <p style='text-align: center;'> This figure demonstrates my recent work in trajectory planning under line-of-sight constraints. It's also interactive, feel free to play the animation! Find more details <a href="/papers/los/">here</a></p>
 </div>
