@@ -11,7 +11,7 @@ author_profile: true
 
 {% include base_path %}
 
-<h2>Conference Publications</h2>
+<!-- <h2>Conference Publications</h2>
 <ul>
   <li><a href="/papers/halo_paper/">HALO: Hazard-Aware Landing Optimization for Autonomous Systems</a></li>
 </ul>
@@ -19,7 +19,107 @@ author_profile: true
 <h2>Journal Publications</h2>
 <ul>
   <li><a href="/papers/los/">Continuous Time Line-of-Sight Guidance for Six Degree of Freedom Systems</a></li>
-</ul>
+</ul> -->
+<style>
+  @media (max-width: 1300px) {
+    .responsive-item {
+      width: 100% !important;
+      flex: 1 1 100% !important;
+      margin: 10px auto;
+    }
+  }
+  .responsive-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .responsive-container ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%; /* Ensure the container spans full width */
+  }
+</style>
+
+
+<h2>Journal Publications</h2>
+<div class="responsive-container" style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px;">
+    <li class="responsive-item" style="margin: 10px 0; width: 45%;">
+      <a href="/papers/los/" style="display: block; padding: 15px; background-color: #898989; border: 1px solid #898989; border-radius: 5px; text-decoration: none; color: #ffffff;">
+        <div style="display: flex; align-items: center;">
+          <img src="/papers/halo/static/images/paper.png" alt="LOS Paper" style="height: 200px; margin-right: 15px; border-radius: 5px;">
+          <div>
+            <h3 style="margin: 0; font-size: 14pt;">Continuous Time Line-of-Sight Guidance for Six Degree of Freedom Systems</h3>
+            <p style="margin: 5px 0 0; font-size: 10pt;">Chris Hayner, John M. Carson III, Beh&#231;et
+              A&#231;&#305;kme&#351;e, Karen Leung</p>
+            <p style="margin: 5px 0 0; font-size: 10pt"><i>IEEE Robotics and Automation Letters (in review)</i></p>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li class="responsive-item" style="margin: 10px 0; width: 45%;">
+      <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=saeJ_VsAAAAJ&citation_for_view=saeJ_VsAAAAJ:qjMakFHDy7sC" style="display: block; padding: 15px; background-color: #898989; border: 1px solid #898989; border-radius: 5px; text-decoration: none; color: #ffffff;">
+        <div style="display: flex; align-items: center;">
+          <img src="/papers/lin_prog/static/images/paper.png" alt="WiSARD Paper" style="height: 200px; margin-right: 15px; border-radius: 5px;">
+          <div>
+            <h3 style="margin: 0; font-size: 14pt;">Linear Programming Approach to Relative-Orbit Control with Element-Wise Quantized Thrust</h3>
+            <p style="margin: 5px 0 0; font-size: 10pt;">Kazuya Echigo, Chris Hayner, Avi Mittal, Selahattin Burak Sars&#305;lmaz, Beh&#231;et
+              A&#231;&#305;kme&#351;e</p>
+            <p style="margin: 5px 0 0; font-size: 10pt;"><i>IEEE Controls Systems Letters (L-CSS)</i></p>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<h2>Conference Publications</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px;">
+    <li class="responsive-item" style="margin: 10px 0; width: 45%;">
+      <a href="/papers/halo/" style="display: block; padding: 15px; background-color: #898989; border: 1px solid #898989; border-radius: 5px; text-decoration: none; color: #ffffff;">
+        <div style="display: flex; align-items: center;">
+          <img src="/papers/halo/static/images/paper.png" alt="HALO Paper" style="height: 200px; margin-right: 15px; border-radius: 5px;">
+          <div>
+            <h3 style="margin: 0; font-size: 14pt;">HALO: Hazard-Aware Landing Optimization for Autonomous Systems</h3>
+            <p style="margin: 5px 0 0; font-size: 10pt;">Chris Hayner<sup>*</sup>, Samuel C. Buckner<sup>*</sup>, Daniel Broyles, Evelyn Madewell, Karen Leung, Beh&#231;et
+              A&#231;&#305;kme&#351;e</p>
+            <p style="margin: 5px 0 0; font-size: 10pt;"><i>IEEE International Conference on Robotics and Automation (ICRA)</i></p>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li class="responsive-item" style="margin: 10px 0; width: 45%;">
+      <a href="https://arxiv.org/abs/2309.04453" style="display: block; padding: 15px; background-color: #898989; border: 1px solid #898989; border-radius: 5px; text-decoration: none; color: #ffffff;">
+        <div style="display: flex; align-items: center;">
+          <img src="/papers/wisard/static/images/wisard.png" alt="WiSARD Paper" style="height: 200px; margin-right: 15px; border-radius: 5px;">
+          <div>
+            <h3 style="margin: 0; font-size: 14pt;">WiSARD: A Labeled Visual and Thermal Image Dataset for Wilderness Search and Rescue</h3>
+            <p style="margin: 5px 0 0; font-size: 10pt;">Daniel Broyles<sup>*</sup>, Chris Hayner<sup>*</sup>, Karen Leung</p>
+            <p style="margin: 5px 0 0; font-size: 10pt;"><i>IEEE/RSJ International Conference Intelligent Robots and Systems (IROS)</i></p>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li class="responsive-item" style="margin: 10px 0; width: 45%;">
+      <a href="https://arc.aiaa.org/doi/abs/10.2514/6.2023-0493" style="display: block; padding: 15px; background-color: #898989; border: 1px solid #898989; border-radius: 5px; text-decoration: none; color: #ffffff;">
+        <div style="display: flex; align-items: center;">
+          <img src="/papers/quant_thrust/static/images/paper.png" alt="HALO Paper" style="height: 200px; margin-right: 15px; border-radius: 5px;">
+          <div>
+            <h3 style="margin: 0; font-size: 14pt;">Convex Trajectory Planning for Proximity Operations using Electric Propulsion with Quantized Thrust</h3>
+            <p style="margin: 5px 0 0; font-size: 10pt;">Kazuya Echigo, Chris Hayner, Avi Mittal, Selahattin Burak Sars&#305;lmaz, Beh&#231;et
+              A&#231;&#305;kme&#351;e</p>
+            <p style="margin: 5px 0 0; font-size: 10pt;"><i>AIAA Scitech Forum</i></p>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+  <p style="font-size: 8pt;"><sup>*</sup> indicates equal controbutions</p>
+</div>
 
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
