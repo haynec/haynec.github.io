@@ -48,6 +48,25 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <style>
+    .responsive-icon {
+      width: 150px;
+      height: 150px;
+    }
+  
+    @media (max-width: 1000px) {
+      .responsive-icon {
+        width: 75px;
+        height: 75px;
+      }
+    }
+    @media (max-width: 600px) {
+      .responsive-icon {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -85,37 +104,41 @@
 
                   <div class="publication-links" style="display: flex; justify-content: center; margin-top: 3rem; margin-left: 25px">
                     <!-- Arxiv PDF link -->
-                    <a href="https://arxiv.org/pdf/2304.01583" target="_blank"
-                    class="external-link">
+                    <a href="https://arxiv.org/pdf/2304.01583" target="_blank" class="external-link">
                       <div style="display: flex; flex-direction: column; align-items: center;">
-                        <img src="static/images/paper.png" alt="Image description" style="height: 100px;">
+                        <div style="position: relative;" class="responsive-icon">
+                          <img src="static/images/paper.png" alt="Image description" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; border: none;">
+                        </div>
                         <span style="font-family: Computer Modern Sans;">Paper</span>
                       </div>
                     </a>
 
                     <!-- Slides link -->
-                    <a href="static/pdfs/HALO_Presentation_ICRA.pdf" target="_blank" 
-                    class="external-link">
+                    <a href="static/pdfs/HALO_Presentation_ICRA.pdf" target="_blank" class="external-link">
                       <div style="display: flex; flex-direction: column; align-items: center;">
-                        <img src="static/images/slides.png" alt="Image description" style="height: 100px;">
+                        <div style="position: relative;" class="responsive-icon">
+                          <img src="static/images/slides.png" alt="Image description" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; border: none;">
+                        </div>
                         <span style="font-family: Computer Modern Sans;">Slides</span>
                       </div>
                     </a>
 
                     <!-- Poster link -->
-                    <a href="static/pdfs/ICRA2023HALO_A4.pdf" target="_blank"
-                    class="external-link">
+                    <a href="static/pdfs/ICRA2023HALO_A4.pdf" target="_blank" class="external-link">
                       <div style="display: flex; flex-direction: column; align-items: center;">
-                        <img src="static/images/poster.png" alt="Image description" style="height: 100px;">
+                        <div style="position: relative;" class="responsive-icon">
+                          <img src="static/images/poster.png" alt="Image description" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; border: none;">
+                        </div>
                         <span style="font-family: Computer Modern Sans;">Poster</span>
                       </div>
                     </a>
 
                     <!-- GitHub link -->
-                    <a href="https://github.com/UW-ACL/HALO" target="_blank"
-                    class="external-link">
+                    <a href="https://github.com/UW-ACL/HALO" target="_blank" class="external-link">
                       <div style="display: flex; flex-direction: column; align-items: center;">
-                        <i class="fab fa-github" style="font-size: 100px; color: #ffffff;"></i>
+                        <div style="position: relative;" class="responsive-icon">
+                          <i class="fab fa-github" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; font-size: 100px; color: #ffffff; object-fit: contain; border: none;"></i>
+                        </div>
                         <span style="font-family: Computer Modern Sans;">GitHub</span>
                       </div>
                     </a>
@@ -123,11 +146,13 @@
                     <!-- Video Presentation link -->
                     <a href="https://www.youtube.com/watch?v=tV0laX3ZvaY" target="_blank" class="external-link">
                       <div style="position: relative; display: flex; flex-direction: column; align-items: center;">
-                        <img src="static/images/slides.png" alt="Image description" style="height: 100px;">
-                        <!-- Overlay the YouTube icon on top of the image -->
-                        <span class="icon" style="position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); height: 30px;">
-                          <i class="fab fa-youtube" style="font-size: 2em; color: #2b2b2b;"></i>
-                        </span>
+                        <div style="position: relative;" class="responsive-icon">
+                          <img src="static/images/slides.png" alt="Image description" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; border: none;">
+                          <!-- Overlay the YouTube icon on top of the image -->
+                          <span class="icon" style="position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); height: 30px;">
+                            <i class="fab fa-youtube" style="font-size: 2em; color: #2b2b2b;"></i>
+                          </span>
+                        </div>
                         <span style="font-family: Computer Modern Sans;">Video</span>
                       </div>
                     </a>
@@ -145,11 +170,9 @@
 
 <!-- Teaser video-->
 <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <div style="display: flex; justify-content: center;">
-        <iframe width="784" height="441" src="https://www.youtube.com/embed/KqCXGDTntDU?si=9oDvTdvUmhNsHZqa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
+  <div class="hero-body">
+    <div style="display: flex; justify-content: center; height: 400px;">
+      <iframe class="youtube-video" height="100%" width="40%" src="https://www.youtube.com/embed/KqCXGDTntDU?si=9oDvTdvUmhNsHZqa" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
   </div>
 </section>
