@@ -27,19 +27,6 @@ html, body {
   color: white;
 }
 
-/* .plotly-graph-div {
-  display: block;
-  margin: 10px;
-} */
-
-/* .plotly-figs{
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 20px auto;
-} */
-
 .author-block a {
   color: white;
 }
@@ -65,6 +52,12 @@ html, body {
 
 .centered-container {
   text-align: center;
+}
+
+@media (max-width: 1300px) {
+  .plotly-container {
+    width: 100% !important;
+  }
 }
 
 
