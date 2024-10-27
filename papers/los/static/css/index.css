@@ -17,9 +17,10 @@ html, body {
 }
 
 .youtube-video {
-  height: 100%;
-  width: 40%;
-  min-width: 600px;
+  width: 80%;
+  min-width: 40ex;
+  max-width: 100ex;
+  aspect-ratio: 16 / 9;
 }
 
 #abstract {
