@@ -181,10 +181,15 @@
   }
 }
 
+.btn--inverse.open {
+  margin-bottom: 20ex;
+}
+
 .author__urls {
   display: none;
+  position: absolute;
   right: 0;
-  margin-top: 15px;
+  margin-top: -14ex;
   padding: 10px;
   list-style-type: none;
   border: 1px solid $border-color;
@@ -204,22 +209,22 @@
     box-shadow: none;
   }
 
-  // &:before {
-  //   display: block;
-  //   content: "";
-  //   position: absolute;
-  //   top: -11px;
-  //   left: calc(50% - 10px);
-  //   width: 0;
-  //   border-style: solid;
-  //   border-width: 0 10px 10px;
-  //   border-color: $border-color transparent;
-  //   z-index: 0;
+  &:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: calc(50% - 10px);
+    width: 0;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    border-color: $border-color transparent;
+    z-index: 0;
 
-  //   @include breakpoint($large) {
-  //     display: none;
-  //   }
-  // }
+    @include breakpoint($large) {
+      display: none;
+    }
+  }
 
   &:after {
     display: block;
