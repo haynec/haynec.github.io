@@ -20,7 +20,7 @@ redirect_from:
 
 
 I am a fourth-year Ph.D. student in the Aeronautics & Astronautics Department at the University of Washington, working with the [Autonomous Controls Laboratory](https://uwacl.com/) under Prof. Beh&#231;et A&#231;&#305;kme&#351;e and with the [Control and Trustworthy Robotics Laboratory](https://depts.washington.edu/ctrl/index.html) under Prof. Karen Leung.
-My research focuses on the developing reliable and real-time capable Perception and Guidance methods for autonomous systems, and their practical applications in real-world systems.  To take full advantage of these algorthims I also designed custom full-stack quadrotor controllers and hardware. This includes:
+My research focuses on the developing reliable and real-time capable Perception and Guidance methods for autonomous systems, and their practical applications in real-world systems.  To take full advantage of these algorithms, I also designed custom full-stack quadrotor controllers and hardware. This includes:
 
 - Convex Optimization (Convex Approximation Methods)
 - Real-Time Trajectory Optimization (Sequential Convex Programming)
