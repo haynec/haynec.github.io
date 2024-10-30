@@ -4,50 +4,44 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta property="og:title" content="HALO"/>
+  <meta property="og:description" content="Hazard-Aware Landing Optimization"/>
+  <meta property="og:url" content="https://haynec.github.io/papers/halo/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="perception, trajectory optimization, robotics, convex optimization">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
   <title>Hazard-Aware Landing Optimization for Autonomous Systems</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet"> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bitmaks/cm-web-fonts@latest/fonts.css">
-  
+
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
-  <!-- <link href="path/to/CMU-Sans-Serif.css" rel="stylesheet"> -->
-  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/fontawesome.all.min.js"></script>
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> -->
+  <script type="text/javascript" src="https://cdn.plot.ly/plotly-2.34.0.min.js"></script>
+  <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   <style>
     .responsive-icon {
       width: 150px;
@@ -66,6 +60,11 @@
         height: 50px;
       }
     }
+    @media (max-width: 1300px) {
+      .responsive-title {
+        display: none;
+      }
+    }
   </style>
 </head>
 <body>
@@ -76,27 +75,27 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title" style="font-family: 'Computer Modern Sans';">Hazard-Aware Landing Optimization</h1>
-            <h2 class="subtitle is-2 publication-subtitle" style="font-family: 'Computer Modern Sans';">for Autonomous Systems</h2>
+            <h1 class="title is-1 publication-title" style="font-family: 'Computer Modern Sans'; font-size: clamp(28px, 3vw, 42px);">Hazard-Aware Landing Optimization</h1>
+            <h2 class="subtitle is-2 publication-subtitle" style="font-family: 'Computer Modern Sans'; font-size: clamp(24px, 2.5vw, 36px);">for Autonomous Systems</h2>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="/" target="_blank" style="font-family: Computer Modern Sans;">Christopher R. Hayner</a><sup>*</sup>,</span>
+                <a href="/" style="font-family: Computer Modern Sans; font-size: clamp(16px, 1.39vw, 20px);">Christopher R. Hayner</a><sup>*</sup>,</span>
                 <span class="author-block">
-                  <a href="http://samuelcbuckner.com/" target="_blank" style="font-family: Computer Modern Sans;">Samuel C. Buckner</a><sup>*</sup>,</span>
+                  <a href="http://samuelcbuckner.com/" target="_blank" style="font-family: Computer Modern Sans; font-size: clamp(16px, 1.39vw, 20px);">Samuel C. Buckner</a><sup>*</sup>,</span>
                   <span class="author-block">
-                    <a href="https://www.afit.edu/bios/bio.cfm?facID=2030&a=expertise" target="_blank" style="font-family: Computer Modern Sans;">Daniel Broyles</a>,</span>
+                    <a href="https://www.afit.edu/bios/bio.cfm?facID=2030&a=expertise" target="_blank" style="font-family: Computer Modern Sans; font-size: clamp(16px, 1.39vw, 20px);">Daniel Broyles</a>,</span>
                     <span class="author-block">
-                      <a href="https://www.linkedin.com/in/evelyn-madewell-346149225" target="_blank" style="font-family: Computer Modern Sans;">Evelyn Madewell</a>,</span>
+                      <a href="https://www.linkedin.com/in/evelyn-madewell-346149225" target="_blank" style="font-family: Computer Modern Sans; font-size: clamp(16px, 1.39vw, 20px);">Evelyn Madewell</a>,</span>
                       <span class="author-block">
-                        <a href="https://faculty.washington.edu/kymleung/" target="_blank" style="font-family: Computer Modern Sans;">Karen Leung</a>,</span>
+                        <a href="https://faculty.washington.edu/kymleung/" target="_blank" style="font-family: Computer Modern Sans; font-size: clamp(16px, 1.39vw, 20px);">Karen Leung</a>,</span>
                         <span class="author-block">
-                          <a href="https://www.aa.washington.edu/facultyfinder/behcet-acikmese" target="_blank" style="font-family: Computer Modern Sans;">Beh&#231;et A&#231;&#305;kme&#351;e</a>
+                          <a href="https://www.aa.washington.edu/facultyfinder/behcet-acikmese" target="_blank" style="font-family: Computer Modern Sans; font-size: clamp(16px, 1.39vw, 20px);">Beh&#231;et A&#231;&#305;kme&#351;e</a>
                   </span>
                   </div>
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block" style="font-family: Computer Modern Sans;">University of Washington<br>IEEE International Conference on Robotics and Automation (ICRA), 2023</span>
-                    <span class="eql-cntrb" style="font-family: Computer Modern Sans;"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block" style="font-family: Computer Modern Sans; font-size: clamp(16px, 1.39vw, 20px)">University of Washington<br>IEEE International Conference on Robotics and Automation (ICRA), 2023</span>
+                    <span class="eql-cntrb" style="font-family: Computer Modern Sans; font-size: clamp(16px, 1.39vw, 20px)"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
 
                   <!-- Add horizontal line -->
@@ -109,7 +108,7 @@
                         <div style="position: relative;" class="responsive-icon">
                           <img src="static/images/paper.png" alt="Image description" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; border: none;">
                         </div>
-                        <span style="font-family: Computer Modern Sans;">Paper</span>
+                        <span style="font-family: Computer Modern Sans;  font-size: clamp(16px, 1.39vw, 20px);">Paper</span>
                       </div>
                     </a>
 
@@ -119,7 +118,7 @@
                         <div style="position: relative;" class="responsive-icon">
                           <img src="static/images/slides.png" alt="Image description" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; border: none;">
                         </div>
-                        <span style="font-family: Computer Modern Sans;">Slides</span>
+                        <span style="font-family: Computer Modern Sans;  font-size: clamp(16px, 1.39vw, 20px);">Slides</span>
                       </div>
                     </a>
 
@@ -129,7 +128,7 @@
                         <div style="position: relative;" class="responsive-icon">
                           <img src="static/images/poster.png" alt="Image description" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; border: none;">
                         </div>
-                        <span style="font-family: Computer Modern Sans;">Poster</span>
+                        <span style="font-family: Computer Modern Sans;  font-size: clamp(16px, 1.39vw, 20px);">Poster</span>
                       </div>
                     </a>
 
@@ -139,7 +138,7 @@
                         <div style="position: relative;" class="responsive-icon">
                           <i class="fab fa-github" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; font-size: 100px; color: #ffffff; object-fit: contain; border: none;"></i>
                         </div>
-                        <span style="font-family: Computer Modern Sans;">GitHub</span>
+                        <span style="font-family: Computer Modern Sans;  font-size: clamp(16px, 1.39vw, 20px);">GitHub</span>
                       </div>
                     </a>
 
@@ -153,7 +152,7 @@
                             <i class="fab fa-youtube" style="font-size: 2em; color: #2b2b2b;"></i>
                           </span>
                         </div>
-                        <span style="font-family: Computer Modern Sans;">Video</span>
+                        <span style="font-family: Computer Modern Sans;  font-size: clamp(16px, 1.39vw, 20px);">Video</span>
                       </div>
                     </a>
                   </div>
@@ -170,10 +169,8 @@
 
 <!-- Teaser video-->
 <section class="hero teaser">
-  <div class="hero-body">
-    <div style="display: flex; justify-content: center; height: 400px;">
-      <iframe class="youtube-video" height="100%" width="40%" src="https://www.youtube.com/embed/KqCXGDTntDU?si=9oDvTdvUmhNsHZqa" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
+  <div style="display: flex; justify-content: center; height: 400px">
+    <iframe class="youtube-video" src="https://www.youtube.com/embed/KqCXGDTntDU?si=9oDvTdvUmhNsHZqa" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
 </section>
 <!-- End teaser video -->
@@ -181,8 +178,8 @@
 <!-- Abstract -->
 <section class="section" id="abstract">
   <div class="container is-max-desktop content">
-    <h2 class="title" style="font-family: 'Computer Modern Sans';">Abstract</h2>
-    <p style="font-family: 'Computer Modern Sans';">
+    <h2 class="title" style="font-family: 'Computer Modern Sans'; font-size: clamp(24px, 2.5vw, 36px)">Abstract</h2>
+    <p style="font-family: 'Computer Modern Sans'; font-size: clamp(16px, 1.39vw, 20px);">
       With autonomous aerial vehicles enacting safety-critical missions, such as the Mars Science Laboratory Curiosity rover’s landing on Mars, the tasks of automatically identifying and reasoning about potentially hazardous landing sites is paramount. 
       This paper presents a coupled perception-planning solution which addresses the hazard detection, optimal landing trajectory generation, and contingency planning challenges encountered when landing in uncertain environments. 
       Specifically, we develop and combine two novel algorithms, Hazard-Aware Landing Site Selection (HALSS) and Adaptive Deferred-Decision Trajectory Optimization (Adaptive-DDTO), to address the perception and planning challenges, respectively.
@@ -195,8 +192,8 @@
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
-      <h2 class="title" style="font-family: 'Computer Modern Sans';">BibTeX</h2>
-      <pre><code>@INPROCEEDINGS{10160655,
+      <h2 class="title" style="font-family: 'Computer Modern Sans'; font-size: clamp(24px, 2.5vw, 36px)">BibTeX</h2>
+      <pre class="font-size: clamp(16px, 1.39vw, 20px);"><code>@INPROCEEDINGS{10160655,
         author={Hayner, Christopher R. and Buckner, Samuel C. and Broyles, Daniel and Madewell, Evelyn and Leung, Karen and Açikmeşe, Behçet},
         booktitle={2023 IEEE International Conference on Robotics and Automation (ICRA)}, 
         title={HALO: Hazard-Aware Landing Optimization for Autonomous Systems}, 

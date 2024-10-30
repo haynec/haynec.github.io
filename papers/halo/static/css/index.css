@@ -1,6 +1,34 @@
 body {
   background-color: #2b2b2b;
-  color: #ffffff;
+  color: #2b2b2b;
+  width: 90%; /* Adjust this value as needed */
+  margin: 0 auto; /* This centers the body */
+  padding: 0;
+}
+
+.is-size-5.publication-authors {
+  color: white;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.youtube-video {
+  width: 80%;
+  min-width: 40ex;
+  max-width: 100ex;
+  aspect-ratio: 16 / 9;
+}
+
+#abstract {
+  color: white;
+}
+
+.author-block a {
+  color: white;
 }
 
 .footer .icon-link {
@@ -20,6 +48,19 @@ body {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+
+.centered-container {
+  text-align: center;
+}
+
+@media (max-width: 1300px) {
+  .plotly_container {
+    width: 100% !important;
+  }
+}
+
+
 
 .dnerf {
   font-variant: small-caps;
@@ -46,9 +87,9 @@ body {
   padding-bottom: 1rem; /* Adjust this value to your liking */
 }
 
-.author-block a {
-  color: #ffffff; /* Makes the text white */
-}
+/* .teaser {
+  font-family: 'Google Sans', sans-serif;
+} */
 
 .external-link img {
   border: 2px solid black; /* Adjust this value to your liking */
@@ -66,16 +107,6 @@ body {
 .external-link span {
   color: #ffffff; /* Makes the text white */
 }
-
-hr {
-  border: none;
-  border-top: 1px solid #ccc;
-  color: #fff;
-  background-color: #fff;
-  height: 2px;
-  width: 100%;
-}
-
 
 .external-link {
   margin-right: 40px; /* Adjust this value to your liking */
@@ -109,8 +140,9 @@ hr {
 }
 
 .publication-title {
-  color: #ffffff;
 }
+
+
 
 .publication-subtitle {
   /* Make light grey */
@@ -145,13 +177,13 @@ hr {
 .publication-header .hero-body {
 }
 
-.publication-title {
-    font-family: 'Computer Modern', sans-serif;
+/* .publication-title {
+    font-family: 'Google Sans', sans-serif;
 }
 
 .publication-authors {
-    font-family: 'Computer Modern', sans-serif;
-}
+    font-family: 'Google Sans', sans-serif;
+} */
 
 .publication-venue {
     color: #555;
@@ -168,12 +200,13 @@ hr {
 .publication-authors {
 }
 
-.publication-authors a {
-   color: #ffffff;
-}
-
-.author {
-  color: white;
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  color: #fff;
+  background-color: #fff;
+  height: 2px;
+  width: 100%;
 }
 
 .publication-authors a:hover {
