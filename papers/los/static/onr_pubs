@@ -1,0 +1,24 @@
+Title,ONR Acknoledgement,Conf/Journal,Citations,Awards,Year
+Continuous-Time Line-of-Sight Constrained Trajectory Planning for 6-Degree of Freedom Systems,yes,Journal,0,,2024
+Dispersion Sensitive Optimal Control: A Conditional Value-at-Risk-Based Tail Flattening Approach via Sequential Convex Programming,yes,Journal,0,,2024
+Optimization with Temporal and Logical Specifications via Generalized Mean-based Smooth Robustness Measures,yes,Journal,0,,2024
+Successive convexification for trajectory optimization with continuous-time constraint satisfaction,yes,Journal,6,,2024
+Joint synthesis of trajectory and controlled invariant funnel for discrete‐time systems with locally Lipschitz nonlinearities,yes,Journal,8,,2024
+Constraint Preconditioning and Parameter Selection for a First-Order Primal-Dual Method applied to Model Predictive Control,yes,,1,,2024
+Sufficient LMI Copositivity Conditions for Funnel Synthesis of Uncertain Nonlinear Systems,yes,,0,,2024
+Spacecraft rendezvous guidance via factorization-free sequential convex programming using a first-order method,yes,,2,,2024
+Fast monte carlo analysis for 6-dof powered-descent guidance via gpu-accelerated sequential convex programming,yes,Conference,8,,2024
+Customized Real-Time First-Order Methods for Onboard Dual Quaternion-based 6-DoF Powered-Descent Guidance,no,Conference,23,Best AIAA GNC Paper,2023
+Real-Time Sequential Conic Optimization for Multi-Phase Rocket Landing Guidance,no,Conference,22,,2023
+Optimization-based constrained funnel synthesis for systems with lipschitz nonlinearities via numerical optimal control,no,Journal,6,,2023
+Real-time quadrotor trajectory optimization with time-triggered corridor constraints,no,Journal,5,,2023
+HALO: Hazard-aware landing optimization for autonomous systems,no,Conference,6,,2023
+High-accuracy 3-dof hypersonic reentry guidance via sequential convex programming,yes,Conference,9,,2023
+Convex Optimization for Trajectory Generation: A Tutorial on Generating Dynamically Feasible Trajectories Reliably and Efficiently,yes,Journal,195,Best CSM Paper,2022
+Guided policy search using sequential convex programming for initialization of trajectory optimization algorithms,yes,Conference,5,,2022
+Successive convexification for optimal control with signal temporal logic specifications,yes,Conference,12,,2022
+Visual Modeling System for Optimization-Based Real-Time Trajectory Planning for Autonomous Aerial Drones,yes,Conference,2,,2022
+Proportional–integral projected gradient method for conic optimization,yes,Journal,27,,2022
+Hypersonic entry trajectory optimization via successive convexification with abstracted control,yes,Conference,7,,2022
+Deferring Decision in Multi-target Trajectory Optimization,yes,Conference,4,,2022
+A Customized First-Order Solver for Real-Time Powered-Descent Guidance,no,Conference,16,,2022
