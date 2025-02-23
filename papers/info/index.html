@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta property="og:title" content="HALO"/>
+  <meta property="og:description" content="Hazard-Aware Landing Optimization"/>
+  <meta property="og:url" content="https://haynec.github.io/papers/halo/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="perception, trajectory optimization, robotics, convex optimization">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title style="color: #ffffff;">Information-Aware Powered Descent Guidance</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bitmaks/cm-web-fonts@latest/fonts.css">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> -->
+  <script type="text/javascript" src="https://cdn.plot.ly/plotly-2.34.0.min.js"></script>
+  <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <style>
+    .responsive-icon {
+      width: 150px;
+      height: 150px;
+    }
+  
+    @media (max-width: 1000px) {
+      .responsive-icon {
+        width: 75px;
+        height: 75px;
+      }
+    }
+    @media (max-width: 600px) {
+      .responsive-icon {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    @media (max-width: 1300px) {
+      .responsive-title {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title" style="font-family: 'Computer Modern Sans'; font-size: clamp(28px, 3vw, 42px); color: white">Information-Aware Powered Descent Guidance</h1>
+            <h2 class="subtitle is-2 publication-subtitle" style="font-family: 'Computer Modern Sans'; font-size: clamp(24px, 2.5vw, 36px); color: #999999">for Entry, Descent and Landing</h2>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="/" style="font-family: Computer Modern Sans; font-size: clamp(16px, 1.39vw, 20px);">Christopher R. Hayner<sup>1</sup></a>,</span>
+                <span class="author-block">
+                  <a href="http://nataliapavlasek.com" target="_blank" style="font-family: Computer Modern Sans; font-size: clamp(16px, 1.39vw, 20px);">Natalia Pavlasek<sup>1</sup></a>,</span>
+                  <span class="author-block">
+                    <a href="https://faculty.washington.edu/kymleung/" target="_blank" style="font-family: Computer Modern Sans; font-size: clamp(16px, 1.39vw, 20px);">Karen Leung<sup>1</sup></a>,</span>
+                    <span class="author-block">
+                      <a href="https://www.aa.washington.edu/facultyfinder/behcet-acikmese" target="_blank" style="font-family: Computer Modern Sans; font-size: clamp(16px, 1.39vw, 20px);">Beh&#231;et A&#231;&#305;kme&#351<sup>1</sup></a>,</span>
+                      <span class="author-block">
+                        <a style="font-family: Computer Modern Sans; font-size: clamp(16px, 1.39vw, 20px);">John M. Carson III<sup>2</sup></a></span>
+                  </span>
+                  </div>
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block" style="font-family: Computer Modern Sans; font-size: clamp(16px, 1.39vw, 20px)">University of Washington<br>AIAA SciTech Forum, 2025</span>
+                  </div>
+
+                  <!-- Add horizontal line -->
+                  <hr style="border-top: 1px solid #ffffff; margin-top: 1rem; margin-bottom: 1rem;">
+
+                  <div class="publication-links" style="display: flex; justify-content: center; margin-top: 3rem; margin-left: 25px">
+                    <!-- Arxiv PDF link -->
+                    <a href="https://arc.aiaa.org/doi/abs/10.2514/6.2025-1896" target="_blank" class="external-link">
+                      <div style="display: flex; flex-direction: column; align-items: center;">
+                        <div style="position: relative;" class="responsive-icon">
+                          <img src="static/images/paper.png" alt="Image description" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; border: none;">
+                        </div>
+                        <span style="font-family: Computer Modern Sans;  font-size: clamp(16px, 1.39vw, 20px);">Paper</span>
+                      </div>
+                    </a>
+
+                    <!-- Slides link -->
+                    <a href="static/pdfs/scitech_2025.pdf" target="_blank" class="external-link">
+                      <div style="display: flex; flex-direction: column; align-items: center;">
+                        <div style="position: relative;" class="responsive-icon">
+                          <img src="static/images/slides.png" alt="Image description" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; border: none;">
+                        </div>
+                        <span style="font-family: Computer Modern Sans;  font-size: clamp(16px, 1.39vw, 20px);">Slides</span>
+                      </div>
+                    </a>
+
+                    <!-- Poster link -->
+                    <!-- <a href="static/pdfs/ICRA2023HALO_A4.pdf" target="_blank" class="external-link">
+                      <div style="display: flex; flex-direction: column; align-items: center;">
+                        <div style="position: relative;" class="responsive-icon">
+                          <img src="static/images/poster.png" alt="Image description" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; border: none;">
+                        </div>
+                        <span style="font-family: Computer Modern Sans;  font-size: clamp(16px, 1.39vw, 20px);">Poster</span>
+                      </div>
+                    </a> -->
+
+                    <!-- GitHub link -->
+                    <!-- <a href="https://github.com/UW-ACL/HALO" target="_blank" class="external-link">
+                      <div style="display: flex; flex-direction: column; align-items: center;">
+                        <div style="position: relative;" class="responsive-icon">
+                          <i class="fab fa-github" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; font-size: 100px; color: #ffffff; object-fit: contain; border: none;"></i>
+                        </div>
+                        <span style="font-family: Computer Modern Sans;  font-size: clamp(16px, 1.39vw, 20px);">GitHub</span>
+                      </div>
+                    </a> -->
+
+                    <!-- Video Presentation link -->
+                    <!-- <a href="https://www.youtube.com/watch?v=tV0laX3ZvaY" target="_blank" class="external-link">
+                      <div style="position: relative; display: flex; flex-direction: column; align-items: center;">
+                        <div style="position: relative;" class="responsive-icon">
+                          <img src="static/images/slides.png" alt="Image description" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; border: none;">
+                          
+                          <span class="icon" style="position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); height: 30px;">
+                            <i class="fab fa-youtube" style="font-size: 2em; color: #2b2b2b;"></i>
+                          </span>
+                        </div>
+                        <span style="font-family: Computer Modern Sans;  font-size: clamp(16px, 1.39vw, 20px);">Video</span>
+                      </div>
+                    </a> -->
+
+                  </div>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div style="display: flex; justify-content: center; height: 400px">
+    <iframe class="youtube-video" src="https://www.youtube.com/embed/ZYRvdjGi8i0?si=T2MEe_yUqcPovhxC" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Abstract -->
+<section class="section" id="abstract">
+  <div class="container is-max-desktop content">
+    <h2 class="title" style="font-family: 'Computer Modern Sans'; font-size: clamp(24px, 2.5vw, 36px)">Abstract</h2>
+    <p style="font-family: 'Computer Modern Sans'; font-size: clamp(16px, 1.39vw, 20px);">
+      In many autonomous navigation tasks, agents must make decisions based on perceptual information. Enhancing information gained from observations enables agents to achieve goals more efficiently, especially in time- and fuel-critical situations like Powered Descent Guidance. This paper proposes a trajectory optimization framework that promotes information maximization. We employ Gaussian process regression to model the landing space topography, providing surface estimates and their covariance. This covariance integral is used as a cost in an SCP-based trajectory optimization problem, allowing the agent to plan trajectories that minimize environmental covariance. We demonstrate our algorithm in a high-fidelity simulation using Unreal Engine with Digital Elevation Models captured by the Lunar Reconnaissance Orbiter.
+    </p>
+  </div>
+</section>
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title" style="font-family: 'Computer Modern Sans'; font-size: clamp(24px, 2.5vw, 36px)">BibTeX</h2>
+      <pre class="font-size: clamp(16px, 1.39vw, 20px);"><code>@inbook{doi:10.2514/6.2025-1896,
+        author = {Christopher R. Hayner and Natalia Pavlasek and Karen Leung and Behcet Acikmese and John M. Carson},
+        title = {Information-Aware Powered Descent Guidance for Entry, Descent and Landing},
+        booktitle = {AIAA SCITECH 2025 Forum},
+        doi = {10.2514/6.2025-1896},
+        URL = {https://arc.aiaa.org/doi/abs/10.2514/6.2025-1896},
+        eprint = {https://arc.aiaa.org/doi/pdf/10.2514/6.2025-1896}
+      </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            <!-- Add a copyright by adding your name -->
+            &copy; 2023 Christopher R. Hayner
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- Default Statcounter code for Academic Website https://haynec.github.io/ -->
+<script type="text/javascript">
+var sc_project=13048958; 
+var sc_invisible=1; 
+var sc_security="39a5268a"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/13048958/0/39a5268a/1/" alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+<!-- End of Statcounter Code -->
+
+  </body>
+  </html>
