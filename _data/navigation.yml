@@ -8,6 +8,9 @@ main:
   - title: "Publications"
     url: /publications/
 
+  - title: "Software"
+    url: https://haynec.github.io/OpenSCvx/
+
   # - title: "Talks"
   #   url: /talks/    
 
