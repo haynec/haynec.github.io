@@ -7,6 +7,14 @@ redirect_from:
   - /about.html
 ---
 
+<div style="background-color: #414141; border-left: 4px solid #4CAF50; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
+  <p style="margin: 0; font-size: 16px; color: #fff;">
+    <strong>🎉 Exciting News:</strong> I successfully passed my Ph.D. general examination! 
+    <a href="/posts/2025/01/general-exam-passed/" style="color: #52adc8;">Read more about it here</a> or 
+    <a href="/general-exam-slides/" style="color: #52adc8;">view my presentation slides</a>.
+  </p>
+</div>
+
 <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 <div class="plotly_container" style="width: 100%; margin: 1px 0;">
   <div id="demo_fig" class="plotly-graph-div" style="width:100%;"></div>
