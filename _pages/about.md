@@ -27,7 +27,7 @@ redirect_from:
 # Graduate Research in <span style='color: #F29559;'>Autonomous Guidance, Navigation and Control</span>
 
 
-I am a fourth-year Ph.D. student in the Aeronautics & Astronautics Department at the University of Washington, working with the [Autonomous Controls Laboratory](https://uwacl.com/) under Prof. Beh&#231;et A&#231;&#305;kme&#351;e and with the [Control and Trustworthy Robotics Laboratory](https://depts.washington.edu/ctrl/index.html) under Prof. Karen Leung.
+I am a fifth-year Ph.D. student in the Aeronautics & Astronautics Department at the University of Washington, working with the [Autonomous Controls Laboratory](https://uwacl.com/) under Prof. Beh&#231;et A&#231;&#305;kme&#351;e and with the [Control and Trustworthy Robotics Laboratory](https://depts.washington.edu/ctrl/index.html) under Prof. Karen Leung.
 My research focuses on the developing reliable and real-time capable Perception and Guidance methods for autonomous systems, and their practical applications in real-world systems.  To take full advantage of these algorithms, I also designed custom full-stack quadrotor controllers and hardware. This includes:
 
 - Convex Optimization (Convex Approximation Methods)
