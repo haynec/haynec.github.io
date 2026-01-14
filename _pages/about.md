@@ -16,11 +16,19 @@ redirect_from:
 </div>
 
 <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-<div class="plotly_container" style="width: 100%; margin: 1px 0;">
-  <div id="demo_fig" class="plotly-graph-div" style="width:100%;"></div>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-  <script src="/papers/los/static/dr_main_animation.js" async></script>
+<div style="width: 100%; margin: 1px 0;">
+  <iframe 
+    id="viser-iframe"
+    width="100%" 
+    height="600px" 
+    style="border: none; border-radius: 4px;">
+  </iframe>
+  <script>
+    (function() {
+      var iframe = document.getElementById('viser-iframe');
+      iframe.src = '/viser-client/?playbackPath=/files/dr_vp_animation.viser&initialCameraPosition=-4.0451,27.3229,44.3629&initialCameraLookAt=27.2352,-14.1490,27.7019&initialCameraUp=0,0,1&playbackSpeed=20.0';
+    })();
+  </script>
   <p style='text-align: center;'> This figure demonstrates my recent work in trajectory planning under line-of-sight constraints. It's also interactive, feel free to play the animation! Find more details <a href="/papers/los/">here</a></p>
 </div>
 
